@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2><p style="color: green;">Tutaj tworzymy nowego uzytkownika - wpisz swoje dane:</p></h2>
+    <form action="" method="POST">
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name }}
+        </p>
+        <p>
+            {{ form.surname.label }}<br>
+            {{ form.surname }}
+        </p>
+        <p>
+            {{ form.age.label }}<br>
+            {{ form.age }}
+        </p>
+        <p>
+            {{ form.sex.label }}<br>
+            {{ form.sex }}
+        </p>
+        <p>
+            {{ form.position.label }}<br>
+            {{ form.position }}
+        </p>
+        <p> {{ form.submit }}</p>
+    </form>
+{% endblock %}

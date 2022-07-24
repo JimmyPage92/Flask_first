@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2><p style="color: purple;"><u>Hello - here we have all users in our DB:</u></p></h2>
+<ol>
+    {% for item in all_users %}
+        <p>Id: {{item.id_}}</p>
+        <p>Name: {{item.name}}</p>
+        <p>Surname: {{item.surname}}</p>
+        <p>Age: {{item.age}}</p>
+        <p>Sex: {{item.sex}}</p>
+        <p>Position: {{item.position}}</p>
+    <hr style="height: 5px; background: aqua; border: 0px;">
+    {% endfor %}
+    <h3><p style="color: maroon;">Nacisnij CREATE USER zeby wrocic do tworzenia uzytkownika</p></h3>
+    <a href='/create_new_user'>CREATE USER</a>
+</ol>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2> Hello!! My favourites footballers is:</h2>
+<ol>
+{%for i in range(0, len)%}
+
+    <li>{{lista[i]}}</li>
+{%endfor%}
+</ol>
+{% endblock %}

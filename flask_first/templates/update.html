@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2><p><strong>Here we can Update user which ID is {{user.id_}}:</strong></p></h2>
+<hr style="height: 10px; background: blue; border: 10px;">
+  <form action='' method = "POST">
+    <p>Name <input type = "text" name = "name" value="{{user.name}}"/></p>
+    <p>Surname <input type = "text" name = "surname" value="{{user.surname}}"/></p>
+    <p>Age <input type = "integer" name = "age"  value="{{user.age}}"/></p>
+    <p>Sex <input type = "text" name = "sex" value="{{user.sex}}"/></p>
+    <p>Position <input type = "text" name = "position" value="{{user.position}}"/></p>
+    <p><input type = "submit" value = "Submit update" /></p>
+    <hr style="height: 5px;width=10%; background: lime; border: 0px;">
+    <h2><p style="color: red;">Nacisnij Database zeby zobaczyc dodanych uzytkownikow</p></h2>
+    <a href='/all_users'>Database</a>
+    <h2><p style="color: blue;">Nacisnij Create user zeby stworzyc uzytkownika</p></h2>
+    <a href='/create_new_user'>Create user</a>
+  </form>
+{% endblock %}

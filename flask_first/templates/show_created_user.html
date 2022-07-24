@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h3>teeeest</h3>
+<h2><p style="color: red;" style="font-family: verdana;">Hello let me show You new user:</p></h2>
+<h3>teeeest</h3>
+<ol>
+    <li> {{ new_user.name }}</li>
+    <li> {{ new_user.surname }}</li>
+    <li> {{ new_user.sex }}</li>
+    <li> {{ new_user.age }}</li>
+    <li> {{ new_user.position }}</li>
+</ol>
+<a href='/all_users'>pokaz moja baze uzytkownikow</a><br>
+<a href='/create_new_user'>wroc do tworzenia uzytkownika</a>
+{% endblock %}
+

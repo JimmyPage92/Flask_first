@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+<form action='' method="POST">
+    <h2><p><strong>Nacisnij YES aby potwierdzic usuniecie uzytkownika o ID {{ id }}:</strong>
+    <input type = "submit" value="YES"><br>
+        <h3><p style="color: red;" style="font-family: arial;">Wcisnij CANCEL zeby zobaczyc wszystkich uzytkownikow</p></h3>
+    <a href='/all_users'>Cancel</a>
+</form>
+{% endblock %}
